@@ -1,6 +1,6 @@
 import React from 'react';
 import marketplace from '../assets/Screenshot 2024-10-11 101640.png';
-import yummy from '../assets/ymmy.png';
+import yummy from '../assets/ymmuy.png';
 import fashe from '../assets/fashe.png';
 import { motion } from "framer-motion";
 
@@ -24,7 +24,8 @@ function Projects() {
             title: "Yummy Restaurant Landing Page",
             description: "Designed a modern and responsive landing page for a restaurant website using Bootstrap. The layout features an eye-catching hero section with a large food image and a clear call to action, encouraging users to book a table or watch a promotional video. The top navigation provides easy access to the menu, events, and contact pages. This clean and user-friendly design offers a seamless experience for visitors, enhancing user engagement with a visually appealing interface.",
             technologies: ["Sass", "HTML", "CSS"],
-            alt: "Yummy Restaurant Landing Page"
+            alt: "Yummy Restaurant Landing Page",
+            link: "https://ymmuyrestaurant.netlify.app/"
         },
         {
             image: fashe,
@@ -54,11 +55,26 @@ function Projects() {
                     }}
                 >
                     <div className="w-[350px] h-[350px] lg:w-1/3 flex justify-center">
-                        <img
-                            className="mb-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl"
-                            src={project.image}
-                            alt={project.alt}
-                        />
+                        {project.link ? (
+                            <a 
+                                href={project.link} 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="block w-full h-full"
+                            >
+                                <img
+                                    className="mb-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+                                    src={project.image}
+                                    alt={project.alt}
+                                />
+                            </a>
+                        ) : (
+                            <img
+                                className="mb-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+                                src={project.image}
+                                alt={project.alt}
+                            />
+                        )}
                     </div>
                     <div className="w-full max-w-xl lg:w-2/3 flex flex-col justify-center">
                         <h6 className="mb-3 text-2xl font-bold text-gray-100 lg:text-3xl">
