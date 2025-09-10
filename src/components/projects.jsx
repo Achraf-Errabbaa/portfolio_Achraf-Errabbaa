@@ -1,5 +1,5 @@
 import React from 'react';
-import marketplace from '../assets/Screenshot 2024-10-11 101640.png';
+import GamingComputersStore from '../assets/GamingComputersStore.png';
 import yummy from '../assets/ymmuy.png';
 import fashe from '../assets/fashe.png';
 import { motion } from "framer-motion";
@@ -13,17 +13,18 @@ function Projects() {
 
     const projects = [
         {
-            image: marketplace,
-            title: "Marketplace Dashboard",
-            description: "A sleek and responsive marketplace dashboard that empowers users to search, filter, and manage product listings efficiently. It boasts a user-friendly interface with sidebar navigation for easy access to account settings, social features, and analytics. The intuitive product grid allows users to browse items by category and effortlessly add new products or view product details. This dashboard enhances the overall marketplace experience by providing a seamless and efficient platform for users to interact with product listings.",
-            technologies: ["React", "HTML", "CSS"],
-            alt: "Marketplace Dashboard"
+            image: GamingComputersStore,
+            title: "Nexuses PC – Marketplace Dashboard",
+            description: "Nexuses PC is a responsive and modern e-commerce dashboard designed for a high-performance computer store. The interface features smooth sidebar navigation, sleek product category grids, Users can search, filter,  or explore products in a visually clean environment that emphasizes usability and speed. Tailored for gamers and tech enthusiasts, it delivers a seamless browsing experience optimized for performance.",
+            technologies: ["React", "HTML", "Tailwind"],
+            alt: "Nexuses PC Marketplace Dashboard",
+            link: "https://nexusespc.netlify.app/"
         },
         {
             image: yummy,
             title: "Yummy Restaurant Landing Page",
             description: "Designed a modern and responsive landing page for a restaurant website using Bootstrap. The layout features an eye-catching hero section with a large food image and a clear call to action, encouraging users to book a table or watch a promotional video. The top navigation provides easy access to the menu, events, and contact pages. This clean and user-friendly design offers a seamless experience for visitors, enhancing user engagement with a visually appealing interface.",
-            technologies: ["Sass", "HTML", "CSS"],
+            technologies: ["react", "HTML", "Tailiwnd"],
             alt: "Yummy Restaurant Landing Page",
             link: "https://ymmuyrestaurant.netlify.app/"
         },
@@ -32,7 +33,8 @@ function Projects() {
             title: "Fashion eCommerce Landing Page",
             description: "This project is a responsive landing page for an online fashion store. It features a full-width carousel with high-quality imagery and a clear call-to-action button. The minimalistic navigation bar enhances user experience by keeping the design clean and easy to navigate. The product section highlights featured items with a hover effect, providing a smooth and interactive experience. Tailwind CSS was used for fast styling, and Swiper.js was integrated to create the interactive carousel for showcasing the latest collections.",
             technologies: ["React", "HTML", "CSS"],
-            alt: "Fashion eCommerce Landing Page"
+            alt: "Fashion eCommerce Landing Page",
+            link: 'https://efashion-store.netlify.app'
         }
     ];
 
