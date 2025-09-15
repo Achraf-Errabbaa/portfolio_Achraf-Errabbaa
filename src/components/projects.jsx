@@ -26,7 +26,7 @@ function Projects() {
             description: "Designed a modern and responsive landing page for a restaurant website using Bootstrap. The layout features an eye-catching hero section with a large food image and a clear call to action, encouraging users to book a table or watch a promotional video. The top navigation provides easy access to the menu, events, and contact pages. This clean and user-friendly design offers a seamless experience for visitors, enhancing user engagement with a visually appealing interface.",
             technologies: ["react", "HTML", "Tailiwnd"],
             alt: "Yummy Restaurant Landing Page",
-            link: "https://ymmuyrestaurant.netlify.app/"
+            link: "https://yummy-restaurants.netlify.app"
         },
         {
             image: fashe,
