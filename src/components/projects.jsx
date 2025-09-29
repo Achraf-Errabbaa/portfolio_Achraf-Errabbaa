@@ -51,34 +51,34 @@ function Projects() {
                     initial="hidden"
                     whileInView="visible"
                     variants={projectVariants}
-                    transition={{ 
-                        duration: 0.5, 
+                    transition={{
+                        duration: 0.5,
                         delay: index * 0.1 // Stagger effect
                     }}
                 >
-                    <div className="w-[350px] h-[350px] lg:w-1/3 flex justify-center">
+                    <div className="w-full md:w-full h-full lg:w-1/3 flex items-center justify-center">
                         {project.link ? (
-                            <a 
-                                href={project.link} 
-                                target="_blank" 
+                            <a
+                                href={project.link}
+                                target="_blank"
                                 rel="noopener noreferrer"
-                                className="block w-full h-full"
+                                className="w-full h-full flex items-center justify-center"
                             >
                                 <img
-                                    className="mb-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+                                    className="mb-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl max-w-full h-auto"
                                     src={project.image}
                                     alt={project.alt}
                                 />
                             </a>
                         ) : (
                             <img
-                                className="mb-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+                                className="mb-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl max-w-full h-auto"
                                 src={project.image}
                                 alt={project.alt}
                             />
                         )}
                     </div>
-                    <div className="w-full max-w-xl lg:w-2/3 flex flex-col justify-center">
+                    <div className="w-full lg:w-2/3 flex flex-col justify-center">
                         <h6 className="mb-3 text-2xl font-bold text-gray-100 lg:text-3xl">
                             {project.title}
                         </h6>
